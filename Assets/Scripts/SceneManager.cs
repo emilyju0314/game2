@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,15 @@ public class SceneManager : MonoBehaviour
         if(playerCount == 1)
         {
             Time.timeScale = 0;
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                
+            }
         }
+    }
+
+    internal static void LoadScene(string v)
+    {
+        throw new NotImplementedException();
     }
 }

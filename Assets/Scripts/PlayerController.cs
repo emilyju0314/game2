@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
     private float playerSpeed = 5f;
     private float jump = 12f;
     private float BoundY = -5f;
-    private bool gameover = false;
     public string PlayerWin;
     public bool collideFloor = true;
     public bool powerup = false;
@@ -40,7 +39,6 @@ public class PlayerController : MonoBehaviour
         if (transform.position.y < BoundY)
         {
             Destroy(gameObject);
-            gameover = true;
             Debug.Log(PlayerWin);
         }
     }
