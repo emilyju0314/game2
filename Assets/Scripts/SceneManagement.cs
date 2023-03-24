@@ -1,9 +1,11 @@
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SceneManager : MonoBehaviour
+public class SceneManagement : MonoBehaviour
 {
     private int playerCount;
 
@@ -22,7 +24,8 @@ public class SceneManager : MonoBehaviour
             Time.timeScale = 0;
             if (Input.GetKeyDown(KeyCode.R))
             {
-                
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                Time.timeScale = 1;
             }
         }
     }
