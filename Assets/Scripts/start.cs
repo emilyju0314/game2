@@ -32,10 +32,11 @@ public class start : MonoBehaviour
     }
     public void exitClick()
     {
+        Debug.Log("exit");
         Application.Quit();
     }
     void changeScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
     }
 }
